@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link href="cover.css" rel="stylesheet" />
   </head>
-  
+
   <body class="d-flex h-100 text-center text-bg-dark">
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
@@ -30,44 +30,100 @@
       </symbol>
     </svg>
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="">
-        <div>
-          <h3 class="float-md-start mb-0">Cover</h3>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
+    <div class="container-fluid d-flex p-3 mx-auto flex-column">
+      <header class="z-1 sticky-top">
+        <div class="shadow-lg">
+          <h2 class="float-md-start mb-0 ms-4">Cover</h2>
+          <nav
+            id="navbar_top"
+            class="shadow nav nav-masthead justify-content-end pb-3">
             <a
-              class="nav-link fw-bold py-1 px-0 active"
+              class="nav-link fw-bold py-1 px-0 active shadow"
               aria-current="page"
               href="#"
               >Home</a
             >
-            <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
-            <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
+            <a class="nav-link fw-bold py-1 px-0 shadow" href="products.html"
+              >Products</a
+            >
+            <a class="nav-link fw-bold py-1 px-0 shadow" href="#">About Us</a>
+            <a class="ms-5" href="sign-in.html">
+              <button
+                type="button"
+                class="btn mx-3 btn-warning text-dark me-2 shadow">
+                Login
+              </button>
+            </a>
+            <a href="registration.html">
+              <button type="button" class="btn btn-primary ms-2">
+                Sign-up
+              </button>
+            </a>
+
+            <div class="mx-3">
+              <a
+                href="checkout.html"
+                class="link-light d-flex text-decoration-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-cart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+                <span class="badge badge-warning" id="lblCartCount"> 5 </span>
+              </a>
+            </div>
           </nav>
         </div>
       </header>
 
-      <main class="px-3">
-        <h1 class="mb-3">Cover your page.</h1>
-        <p class="lead">
-          Cover is a one-page template for building simple and beautiful home
-          pages. Download, edit the text, and add your own fullscreen background
-          photo to make it your own.
-        </p>
-        <p class="lead m-5">
-          <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white"
-            >Learn more</a
-          >
-        </p>
+      <main class="px-3 d-flex justify-content-center img-fluid">
+        <div class="view">
+          <div class="bg-image align-content-center"></div>
+          <div class="bg-text">
+            <h1 class="mb-3">Cover your page.</h1>
+            <p class="lead">
+              Cover is a one-page template for building simple and beautiful
+              home pages. Download, edit the text, and add your own fullscreen
+              background photo to make it your own.
+            </p>
+            <p class="lead m-5">
+              <a
+                href="#"
+                class="btn btn-lg btn-light fw-bold border-white bg-white"
+                >Learn more</a
+              >
+            </p>
+          </div>
+        </div>
       </main>
 
-      <footer class="text-white-50">
-        <p>
-          Copyright
-          by Teddy Faulk 2023
-        </p>
+      <footer>
+          <div class="footer-tags ">
+            <div class="h5 ">Wax On Inc.</div>
+              <div class="row align-content-between">
+                <div class="col-4 ">
+                  <a class="text-decoration-none text-bg-dark" href="index.html">Home</a>
+                  <a class="text-decoration-none text-bg-dark" href="index.html">Home</a>
+                  <a class="text-decoration-none text-bg-dark" href="index.html">Home</a>
+                </div>
+                <div class="col-4">
+                  <a class="text-decoration-none text-bg-dark" href="index.html">Home</a>
+                  <a class="text-decoration-none text-bg-dark" href="index.html">Home</a>
+                  <a class="text-decoration-none text-bg-dark" href="index.html">Home</a>
+
+                </div>
+              </div>
+          </div>
+          <p>Copyright 2023</p>
+        </div>
       </footer>
     </div>
     <script src="scripts/bootstrap.bundle.js"></script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>

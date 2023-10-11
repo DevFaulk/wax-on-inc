@@ -2,6 +2,33 @@
  * Globals
  */
 
+ /* 
+ Cart Icon
+  */
+
+ .badge {
+  padding-left: 10px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  height: 16px;
+
+  
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+#lblCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px; 
+}
 
 /* Custom default button */
 .btn-light,
@@ -11,7 +38,27 @@
   text-shadow: none; /* Prevent inheritance from `body` */
 }
 
+.bg-image {
+background-image: url(images/istockphoto-1308921669-640x640.jpg);
+height: 80vh;
+width: 100vw;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+filter: blur(4px);
+}
 
+.bg-text {
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
 /*
  * Base structure
  */
@@ -31,11 +78,14 @@ body {
  */
 header
 {
-margin-bottom: 200px;
+margin-bottom: 0px;
 }
 
+
 footer {
-  margin-top: 270px;
+  display: flex;
+  height: 200px;
+
 }
 
 .nav-masthead .nav-link {
