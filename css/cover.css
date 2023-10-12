@@ -38,7 +38,7 @@
   text-shadow: none; /* Prevent inheritance from `body` */
 }
 
-.bg-image {
+.bg-image-home {
 background-image: url(images/istockphoto-1308921669-640x640.jpg);
 height: 80vh;
 width: 100vw;
