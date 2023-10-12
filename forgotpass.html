@@ -3,89 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forgot Password</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <link href="css/cover.css" rel="stylesheet" />
   </head>
-  <body>
-    <header>
-      <div class="px-3 py-2 text-bg-dark border-bottom">
-        <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-                <use xlink:href="#bootstrap"></use>
-              </svg>
-            </a>
 
-            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-              <li>
-                <a href="index.html" class="nav-link text-secondary">
-                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>
-                  Home
-                </a>
-              </li>
+  <body class="d-flex h-100 text-center text-bg-dark">
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+        <path
+          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path
+          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+      </symbol>
+    </svg>
 
-              <li>
-                <a href="products.html" class="nav-link text-white">
-                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
-                  Products
-                </a>
-              </li>
-
-              <li>
-                <a href="checkout.html" class="nav-link text-white">
-                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
-                  Checkout
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="px-3 py-2 border-bottom mb-3">
-        <div class="container d-flex flex-wrap justify-content-end text-end">
-          <form class="col-6 col-lg-3 mb-2 mb-lg-0 me-lg-3" role="search">
-            <input type="search" class="form-control" placeholder="Search..." aria-label="Search" />
-          </form>
-
-          <div class="text-end">
-            <a href="sign-in.html">
-              <button type="button" class="btn btn-light text-dark me-2">Login</button>
+    <div class="container-fluid d-flex p-3 mx-auto flex-column">
+      <header class="z-1 sticky-top">
+        <div class="shadow-lg">
+          <h2 class="float-md-start mb-0 ms-4">Wax On Inc.</h2>
+          <nav
+            id="navbar_top"
+            class="shadow nav nav-masthead justify-content-end pb-3">
+            <a
+              class="nav-link fw-bold py-1 px-0 active shadow"
+              aria-current="page"
+              href="index.html"
+              >Home</a
+            >
+            <a class="nav-link fw-bold py-1 px-0 shadow" href="products.html"
+              >Products</a
+            >
+            <a class="nav-link fw-bold py-1 px-0 shadow" href="about.html"
+              >About Us</a
+            >
+            <a class="ms-5" href="sign-in.html">
+              <button
+                type="button"
+                class="btn mx-3 btn-warning text-dark me-2 shadow">
+                Login
+              </button>
             </a>
             <a href="registration.html">
-              <button type="button" class="btn btn-primary">Sign-up</button>
+              <button type="button" class="btn btn-primary ms-2">
+                Sign-up
+              </button>
             </a>
+
+            <div class="mx-3">
+              <a
+                href="checkout.html"
+                class="link-light d-flex text-decoration-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-cart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+                <span class="badge badge-warning" id="lblCartCount"> 5 </span>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <section class="bg-dark text-bg-dark">
+        <div class="container d-flex justify-content-center">
+          <div class="card text-center" style="width: 300px">
+            <div class="card-header h5 text-white bg-primary">
+              Password Reset
+            </div>
+            <div class="card-body bg-dark-subtle px-5">
+              <p class="card-text py-2">
+                Enter your email address and we'll send you an email with
+                instructions to reset your password.
+              </p>
+              <div class="form-outline">
+                <input type="email" id="typeEmail" class="form-control my-3" />
+                <label class="form-label" for="typeEmail">Email input</label>
+              </div>
+              <a href="#" class="btn btn-primary w-100">Reset password</a>
+              <div class="d-flex justify-content-between mt-4">
+                <a class="" href="#">Login</a>
+                <a class="" href="#">Register</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-
-    <section class="bg-dark text-bg-dark">
-      <div class="container d-flex justify-content-center">
-        <div class="card text-center" style="width: 300px">
-          <div class="card-header h5 text-white bg-primary">Password Reset</div>
-          <div class="card-body bg-dark-subtle px-5">
-            <p class="card-text py-2">
-              Enter your email address and we'll send you an email with instructions to reset your password.
-            </p>
-            <div class="form-outline">
-              <input type="email" id="typeEmail" class="form-control my-3" />
-              <label class="form-label" for="typeEmail">Email input</label>
-            </div>
-            <a href="#" class="btn btn-primary w-100">Reset password</a>
-            <div class="d-flex justify-content-between mt-4">
-              <a class="" href="#">Login</a>
-              <a class="" href="#">Register</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <section class="copyright"></section>
-    </footer>
-
+      </section>
+      <footer>
+        <section class="copyright"></section>
+      </footer>
+    </div>
     <script src="scripts/bootstrap.bundle.js"></script>
   </body>
 </html>
