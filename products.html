@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link href="css/cover.css" rel="stylesheet" />
+    <style>
+      INPUT:-webkit-autofill,
+      SELECT:-webkit-autofill,
+      TEXTAREA:-webkit-autofill {
+        animation-name: onautofillstart;
+      }
+      INPUT:not(:-webkit-autofill),
+      SELECT:not(:-webkit-autofill),
+      TEXTAREA:not(:-webkit-autofill) {
+        animation-name: onautofillcancel;
+      }
+      @keyframes onautofillstart {
+      }
+      @keyframes onautofillcancel {
+      }
+    </style>
   </head>
 
   <body class="d-flex h-100 text-center text-bg-dark">
@@ -83,7 +99,494 @@
         </div>
       </header>
 
+      <!-- carousel -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide carousel-fade"
+        data-mdb-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-mdb-target="#carouselExampleCaptions"
+            data-mdb-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselExampleCaptions"
+            data-mdb-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselExampleCaptions"
+            data-mdb-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://media.cnn.com/api/v1/images/stellar/prod/threshold-candle.jpg?q=h_900,w_1600,x_0,y_0"
+              class="d-block w-100"
+              alt="Wild Landscape" />
+            <div
+              class="mask"
+              style="background-color: rgba(0, 0, 0, 0.4)"></div>
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <h1 class="mb-4">
+                <strong>Best Selling and Long Lasting Candles</strong>
+              </h1>
+
+              <p>
+                <strong>Cotton Wick with High Quality Wax</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong
+                  >Masterful weaving of every single wick to provide high quality candle burning. Your candles will last longer, and your home will smell amazing!</strong
+                >
+              </p>
+ 
+              <a
+                target="_blank"
+                href="registration.html"
+                class="btn btn-outline-white btn-lg"
+                >sign up now
+                <i class=""></i>
+              </a>
+            </div>
+          </div>
+        </div>
+ 
+
+      <!--Main layout-->
+      <main>
+        <div class="container">
+          <!-- Navbar -->
+          <nav
+            class="navbar navbar-expand-lg navbar-dark mt-3 mb-5 shadow p-2"
+            style="background-color: #607d8b">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+              <!-- Navbar brand -->
+              <a class="navbar-brand" href="#">Categories:</a>
+
+              <!-- Toggle button -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent2"
+                aria-controls="navbarSupportedContent2"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+
+              <!-- Collapsible wrapper -->
+              <div
+                class="collapse navbar-collapse"
+                id="navbarSupportedContent2">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <!-- Link -->
+                  <li class="nav-item acitve">
+                    <a class="nav-link text-white" href="#">All</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Shirts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Sport wears</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Outwears</a>
+                  </li>
+                </ul>
+
+                <!-- Search -->
+                <form class="w-auto py-1" style="max-width: 12rem">
+                  <input
+                    type="search"
+                    class="form-control rounded-0"
+                    placeholder="Search"
+                    aria-label="Search" />
+                </form>
+              </div>
+            </div>
+            <!-- Container wrapper -->
+          </nav>
+          <!-- Navbar -->
+
+          <!-- Products -->
+          <section>
+            <div class="text-center">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="card">
+                    <div
+                      class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                      data-mdb-ripple-color="light">
+                      <img
+                        src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg"
+                        class="w-100" />
+                      <a href="#!">
+                        <div class="mask">
+                          <div
+                            class="d-flex justify-content-start align-items-end h-100">
+                            <h5><span class="badge bg-success ms-2 pb-3">NEW</span></h5>
+                          </div>
+                        </div>
+                        <div class="hover-overlay">
+                          <div
+                            class="mask"
+                            style="
+                              background-color: rgba(251, 251, 251, 0.15);
+                            "></div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <a href="" class="text-reset">
+                        <h5 class="card-title mb-2">Denim shirt</h5>
+                      </a>
+                      <a href="" class="text-reset">
+                        <p>Shirt</p>
+                      </a>
+                      <h6 class="mb-3 price">120$</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="card">
+                    <div
+                      class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                      data-mdb-ripple-color="light">
+                      <img
+                        src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg"
+                        class="w-100" />
+                      <a href="#!">
+                        <div class="mask">
+                          <div
+                            class="d-flex justify-content-start align-items-end h-100">
+                            <h5>
+                              <span class="badge bg-primary ms-2 pb-3"
+                                >Bestseller</span
+                              >
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="hover-overlay">
+                          <div
+                            class="mask"
+                            style="
+                              background-color: rgba(251, 251, 251, 0.15);
+                            "></div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <a href="" class="text-reset">
+                        <h5 class="card-title mb-2">Sweatshirt</h5>
+                      </a>
+                      <a href="" class="text-reset">
+                        <p>Sport wear</p>
+                      </a>
+                      <h6 class="mb-3 price">139$</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="card">
+                    <div
+                      class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                      data-mdb-ripple-color="light">
+                      <img
+                        src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg"
+                        class="w-100" />
+                      <a href="#!">
+                        <div class="hover-overlay">
+                          <div
+                            class="mask"
+                            style="
+                              background-color: rgba(251, 251, 251, 0.15);
+                            "></div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <a href="" class="text-reset">
+                        <h5 class="card-title mb-2">Grey blouse</h5>
+                      </a>
+                      <a href="" class="text-reset">
+                        <p>Sport wear</p>
+                      </a>
+                      <h6 class="mb-3 price">99$</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="card">
+                    <div
+                      class="bg-image hover-zoom ripple"
+                      data-mdb-ripple-color="light">
+                      <img
+                        src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg"
+                        class="w-100" />
+                      <a href="#!">
+                        <div class="mask">
+                          <div
+                            class="d-flex justify-content-start align-items-end h-100">
+                            <h5>
+                              <span class="badge sale-badge ms-2">-10%</span>
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="hover-overlay">
+                          <div
+                            class="mask"
+                            style="
+                              background-color: rgba(251, 251, 251, 0.15);
+                            "></div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <a href="" class="text-reset">
+                        <h5 class="card-title mb-2">Black jacket</h5>
+                      </a>
+                      <a href="" class="text-reset">
+                        <p>Outwear</p>
+                      </a>
+                      <h6 class="mb-3 price">
+                        <s>199$</s><strong class="ms-2 sale">179$</strong>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="card">
+                    <div
+                      class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                      data-mdb-ripple-color="light">
+                      <img
+                        src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg"
+                        class="w-100" />
+                      <a href="#!">
+                        <div class="hover-overlay">
+                          <div
+                            class="mask"
+                            style="
+                              background-color: rgba(251, 251, 251, 0.15);
+                            "></div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <a href="" class="text-reset">
+                        <h5 class="card-title mb-2">Sweatshirt</h5>
+                      </a>
+                      <a href="" class="text-reset">
+                        <p>Sport wear</p>
+                      </a>
+                      <h6 class="mb-3 price">139$</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="card">
+                    <div
+                      class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                      data-mdb-ripple-color="light">
+                      <img
+                        src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg"
+                        class="w-100" />
+                      <a href="#!">
+                        <div class="mask">
+                          <div
+                            class="d-flex justify-content-start align-items-end h-100">
+                            <h5>
+                              <span class="badge bg-primary-subtle text-dark ms-2 pb-3">Eco</span>
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="hover-overlay">
+                          <div
+                            class="mask"
+                            style="
+                              background-color: rgba(251, 251, 251, 0.15);
+                            "></div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <a href="" class="text-reset">
+                        <h5 class="card-title mb-2">Grey blouse</h5>
+                      </a>
+                      <a href="" class="text-reset">
+                        <p>Sport wear</p>
+                      </a>
+                      <h6 class="mb-3 price">99$</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="card">
+                    <div
+                      class="bg-image hover-zoom ripple"
+                      data-mdb-ripple-color="light">
+                      <img
+                        src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg"
+                        class="w-100" />
+                      <a href="#!">
+                        <div class="hover-overlay">
+                          <div
+                            class="mask"
+                            style="
+                              background-color: rgba(251, 251, 251, 0.15);
+                            "></div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <a href="" class="text-reset">
+                        <h5 class="card-title mb-2">Black jacket</h5>
+                      </a>
+                      <a href="" class="text-reset">
+                        <p>Outwear</p>
+                      </a>
+                      <h6 class="mb-3 price">199$</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="card">
+                    <div
+                      class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                      data-mdb-ripple-color="light">
+                      <img
+                        src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg"
+                        class="w-100" />
+                      <a href="#!">
+                        <div class="hover-overlay">
+                          <div
+                            class="mask"
+                            style="
+                              background-color: rgba(251, 251, 251, 0.15);
+                            "></div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <a href="" class="text-reset">
+                        <h5 class="card-title mb-2">Denim shirt</h5>
+                      </a>
+                      <a href="" class="text-reset">
+                        <p>Shirt</p>
+                      </a>
+                      <h6 class="mb-3 price">120$</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Pagination -->
+          <nav
+            aria-label="Page navigation example"
+            class="d-flex justify-content-center mt-3">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Pagination -->
+        </div>
+      </main>
+      <!--Main layout-->
+
+   
+      <footer>
+        <div
+          class="container-fluid text-center p-3 mt-4"
+          style="background-color: rgba(0, 0, 0, 0.2); text-color: #e0e0e0">
+          © 2023 Copyright: Teddy Faulk
+        </div>
+    </footer>
     </div>
     <script src="scripts/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript"></script>
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
   </body>
 </html>
