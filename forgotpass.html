@@ -33,22 +33,22 @@
     <div class="container-fluid d-flex p-3 mx-auto flex-column">
       <header class="z-1 sticky-top">
         <div class="shadow-lg">
-          <h2 class="float-md-start mb-0 ms-4">Wax On Inc.</h2>
+          <a href="index.html" class="text-light">
+            <h2 class="float-md-start mb-0 ms-4">Wax On Inc.</h2>
+          </a>
           <nav
             id="navbar_top"
-            class="shadow nav nav-masthead justify-content-end pb-3">
+            class="nav nav-masthead justify-content-end pb-3">
             <a
-              class="nav-link fw-bold py-1 px-0 shadow"
+              class="nav-link fw-bold py-1 px-0"
               aria-current="page"
               href="index.html"
               >Home</a
             >
-            <a class="nav-link fw-bold py-1 px-0 shadow" href="products.html"
+            <a class="nav-link fw-bold py-1 px-0" href="products.html"
               >Products</a
             >
-            <a class="nav-link fw-bold py-1 px-0 shadow" href="about.html"
-              >About Us</a
-            >
+            <a class="nav-link fw-bold py-1 px-0" href="about.html">About Us</a>
             <a class="ms-5" href="sign-in.html">
               <button
                 type="button"
@@ -83,32 +83,51 @@
         </div>
       </header>
 
-      <section class="bg-dark text-bg-dark">
-        <div class="container d-flex justify-content-center">
-          <div class="card text-center" style="width: 300px">
-            <div class="card-header h5 text-white bg-primary">
-              Password Reset
+      <section class="bg-dark text-bg-dark" style="height: 800px">
+        <div class="container d-flex justify-content-center h-50">
+          <div class="row align-items-center" style="margin-top: 150px">
+            <div class="col">
+              <div class="card text-center" style="width: 300px">
+                <div class="card-header h5 text-white bg-primary">
+                  Password Reset
+                </div>
+                <div class="card-body bg-dark-subtle px-5">
+                  <p class="card-text py-2">
+                    Enter your email address and we'll send you an email with
+                    instructions to reset your password.
+                  </p>
+                  <div class="form-outline">
+                    <input
+                      type="email"
+                      id="typeEmail"
+                      class="form-control mb-2" />
+                    <label class="form-label" for="typeEmail"
+                      >Email input</label
+                    >
+                  </div>
+                  <a href="sign-in.html" class="btn btn-primary w-100 mt-3"
+                    >Reset password</a
+                  >
+                  <div class="d-flex justify-content-between mt-4">
+                    <a class="" href="sign-in.html">Login</a>
+                    <a class="" href="registration.html">Register</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="card-body bg-dark-subtle px-5">
-              <p class="card-text py-2">
-                Enter your email address and we'll send you an email with
-                instructions to reset your password.
-              </p>
-              <div class="form-outline">
-                <input type="email" id="typeEmail" class="form-control my-3" />
-                <label class="form-label" for="typeEmail">Email input</label>
-              </div>
-              <a href="#" class="btn btn-primary w-100">Reset password</a>
-              <div class="d-flex justify-content-between mt-4">
-                <a class="" href="#">Login</a>
-                <a class="" href="#">Register</a>
-              </div>
+            <div class="col-6 fade-in-pic">
+              <img src="images/girlthinking.png" alt="girl thinking" />
             </div>
           </div>
         </div>
       </section>
       <footer>
-        <section class="copyright"></section>
+        <div
+          class="container-fluid d-flex justify-content-between text-center p-3 mt-4 align-items-center"
+          style="background-color: rgba(0, 0, 0, 0.2); text-color: #e0e0e0">
+          © 2023 Copyright: Teddy Faulk
+          <img src="images/wax-on-logo.png" style="height: 150px" alt="" />
+        </div>
       </footer>
     </div>
     <script src="scripts/bootstrap.bundle.js"></script>
